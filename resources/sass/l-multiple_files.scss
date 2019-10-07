@@ -1,0 +1,408 @@
+.lar-multiple-files {
+    .uppy-Root {
+        font-family: "Poppins";
+
+        &.uppy-DragDrop--is-dragdrop-supported {
+            border: 2px dashed #ebedf2;
+        }
+    }
+
+    .uppy-Dashboard-inner {
+        background-color: #f7f8fa;
+        border: 1px solid #ebedf2;
+
+        .uppy-DashboardContent-title {
+            color: #74788d;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .uppy-DashboardTabs {
+            .uppy-Dashboard-dropFilesTitle {
+                color: #74788d;
+                font-size: 1.3rem;
+                font-weight: 500;
+            }
+
+            .uppy-DashboardTab-name {
+                color: #74788d;
+            }
+        }
+
+        .uppy-DashboardItem {
+            &.is-complete {
+                .progress {
+                    stroke: #0abb87;
+                    fill: #0abb87;
+                }
+            }
+        }
+
+        .uppy-StatusBar-statusSecondary {
+            overflow: visible;
+        }
+    }
+
+    .uppy-DashboardAddFiles-info {
+        bottom: 20px !important;
+    }
+
+    .uppy-Dashboard-note {
+        color: #74788d;
+        font-size: 0.9rem;
+        font-weight: 400;
+    }
+
+    .uppy-c-btn-primary {
+        font-size: 1rem;
+        font-weight: 400;
+        background: #5d78ff;
+        color: #ffffff;
+        outline: none !important;
+    }
+
+    .uppy-DashboardContent-back {
+        font-size: 1rem;
+        font-weight: 500;
+        color: #5d78ff;
+        outline: none !important;
+    }
+
+    .uppy-Dashboard-browse {
+        color: #5d78ff;
+    }
+
+    .uppy-DashboardContent-addMore {
+        svg {
+            stroke: #5d78ff;
+            fill: #5d78ff;
+        }
+    }
+
+    .uppy-ProgressBar {
+        z-index: 1;
+
+        .uppy-ProgressBar-inner {
+            background-color: #5d78ff;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+        .uppy-ProgressBar-percentage {
+            color: #74788d;
+            font-size: 0.9rem;
+            font-weight: 400;
+        }
+    }
+
+    .uppy-DragDrop-label {
+        font-size: 1rem;
+        font-weight: 500;
+        color: #74788d;
+
+        .uppy-DragDrop-dragText {
+            color: #5d78ff;
+        }
+    }
+
+    .uppy-StatusBar {
+        z-index: 1;
+
+        .uppy-StatusBar-status {
+            overflow-x: visible;
+            display: none;
+        }
+
+        .uppy-StatusBar-progress {
+            background-color: #5d78ff;
+        }
+
+        .uppy-StatusBar-content {
+            .uppy-StatusBar-statusPrimary {
+                font-size: 0.9rem;
+                font-weight: 400;
+                color: #74788d;
+            }
+
+            .uppy-StatusBar-spinner {
+                svg {
+                    fill: #5d78ff;
+                }
+            }
+        }
+
+        .uppy-StatusBar-actions {
+            .uppy-StatusBar-actionCircleBtn {
+                .UppyIcon {
+                    circle {
+                        -webkit-transition: all 0.3s ease;
+                        transition: all 0.3s ease;
+                        fill: #ebedf2;
+                    }
+
+                    path {
+                        -webkit-transition: all 0.3s ease;
+                        transition: all 0.3s ease;
+                        fill: #74788d;
+                    }
+
+                    &:hover {
+                        circle {
+                            -webkit-transition: all 0.3s ease;
+                            transition: all 0.3s ease;
+                            fill: #5d78ff;
+                        }
+
+                        path {
+                            -webkit-transition: all 0.3s ease;
+                            transition: all 0.3s ease;
+                            fill: #ffffff;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.is-complete {
+            .uppy-StatusBar-progress {
+                background-color: #0abb87;
+            }
+        }
+
+        &.uppy-Root {
+            .uppy-StatusBar-content {
+                padding-left: 0 !important;
+            }
+
+            .uppy-StatusBar-actions {
+                right: 0 !important;
+            }
+        }
+    }
+
+    .uppy {
+        &.uppy-Informer {
+            p {
+                background-color: rgba(253, 57, 122, 0.1);
+                color: #fd397a;
+                border-radius: 4px;
+            }
+        }
+    }
+
+    .lar-multiple-files__progress {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .lar-multiple-files__status {
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+
+        &.lar-multiple-files__status--ongoing {
+            height: 40px;
+            opacity: 1;
+        }
+
+        &.lar-multiple-files__status--hidden {
+            display: none;
+        }
+    }
+
+    .lar-multiple-files__btn {
+        margin-top: 10px;
+    }
+
+    .lar-multiple-files__thumbnails {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        position: relative;
+        width: 100%;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+
+        .lar-multiple-files__thumbnail-container {
+            width: calc(50% - 5px);
+            margin: 10px 5px 0;
+            position: relative;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            height: 50px;
+            background-color: #f7f8fa;
+            border-radius: 4px;
+            overflow: hidden;
+
+            .lar-multiple-files__thumbnail {
+                width: 60px;
+                height: 50px;
+                overflow: hidden;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+
+                img {
+                    height: 100%;
+                    width: auto;
+                }
+            }
+
+            .lar-multiple-files__thumbnail-label {
+                font-weight: 400;
+                color: #74788d;
+                margin-left: 10px;
+                padding-right: 10px;
+            }
+
+            .lar-multiple-files__remove-thumbnail {
+                margin: auto 10px auto auto;
+                cursor: pointer;
+            }
+
+            &:nth-child(odd) {
+                margin-left: 0;
+            }
+
+            &:nth-child(even) {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .lar-multiple-files__list {
+        .lar-multiple-files__list-item {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            padding: 0.5rem 1rem;
+            background-color: #f7f8fa;
+            margin-top: 0.75rem;
+            border-radius: 4px;
+
+            &:last-child {
+                margin-bottom: 0.75rem;
+            }
+
+            .lar-multiple-files__list-label {
+                font-weight: 500;
+                color: #74788d;
+            }
+
+            .lar-multiple-files__list-remove {
+                cursor: pointer;
+                margin-left: 1rem;
+
+                i {
+                    -webkit-transition: color 0.3s ease;
+                    transition: color 0.3s ease;
+                    font-size: 0.7rem;
+                    color: #a2a5b9;
+                }
+
+                &:hover {
+                    i {
+                        -webkit-transition: color 0.3s ease;
+                        transition: color 0.3s ease;
+                        color: #5d78ff;
+                    }
+                }
+            }
+        }
+    }
+
+    .lar-multiple-files__wrapper {
+        .uppy-FileInput-container {
+            margin-bottom: 0rem;
+        }
+    }
+
+    .lar-multiple-files__input-label {
+        cursor: pointer !important;
+
+        &:hover {
+            background-color: #5d78ff;
+            color: #ffffff;
+        }
+    }
+
+    .lar-multiple-files__input-control {
+        position: relative;
+        z-index: 1;
+        height: 0;
+        width: 0;
+        opacity: 0;
+    }
+
+    .lar-multiple-files__informer--min {
+        .uppy-Informer {
+            position: static !important;
+            top: auto;
+            bottom: auto;
+            -webkit-transform: none;
+            transform: none;
+            z-index: 0;
+
+            p {
+                display: block;
+                max-width: none;
+            }
+        }
+
+        .uppy-Informer[aria-hidden="true"] {
+            display: none;
+        }
+    }
+}
+
+.lar-multiple-files .uppy-Dashboard-inner .uppy-DashboardContent-bar,
+.lar-multiple-files .uppy-Dashboard-inner .uppy-Dashboard-AddFilesPanel,
+.lar-multiple-files .uppy-Dashboard-inner .uppy-DashboardContent-panel,
+.lar-multiple-files .uppy-Dashboard-inner .uppy-DashboardItem-progress,
+.lar-multiple-files .uppy-Dashboard-inner .uppy-DashboardItem-action,
+.lar-multiple-files .uppy-Dashboard-inner .uppy-DashboardItem-previewLink {
+    z-index: 1;
+}
+
+.lar-multiple-files .uppy-c-btn-primary:focus, .lar-multiple-files .uppy-c-btn-primary:hover {
+    background-color: #3e5fff;
+}
+
+.lar-multiple-files .uppy-DashboardContent-back:focus, .lar-multiple-files .uppy-DashboardContent-back:hover {
+    color: #3e5fff;
+}
+
+.lar-multiple-files .uppy-Dashboard-browse:focus, .lar-multiple-files .uppy-Dashboard-browse:hover {
+    color: #3e5fff;
+}
+
+.lar-multiple-files .uppy-DragDrop-label .uppy-DragDrop-dragText:focus, .lar-multiple-files .uppy-DragDrop-label .uppy-DragDrop-dragText:hover {
+    color: #3e5fff;
+}
+
+@media (max-width: 1399px) {
+    .lar-multiple-files .lar-multiple-files__thumbnails .lar-multiple-files__thumbnail-container {
+        width: 100%;
+        margin: 10px 0 0;
+    }
+}

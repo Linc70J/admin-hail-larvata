@@ -1,0 +1,10 @@
+{
+    "slug": "larvata-metronic-admin",
+    "name": "Larvata Metronic Admin",
+    "author": "kent",
+    "email": "kent@larvata.tw",
+    "description": "metronic 6.0 後台包",
+    "web": "www.larvata.tw",
+    "license": "MIT",
+    "version": "6.0"
+}
