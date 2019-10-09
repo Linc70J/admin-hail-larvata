@@ -175,12 +175,13 @@ class UserController extends Controller
     /**
      * Change or reset the given user's password.
      *
+     * @noinspection PhpUnused Use changePassword in routes/web.php
      * @param Request $request
      * @param User $user
      * @return void
      * @throws ValidationException
      */
-    protected function changePassword(Request $request, User $user)
+    public function changePassword(Request $request, User $user)
     {
         $this->validate($request, [
             'password' => 'required|confirmed|min:8',

@@ -16,7 +16,7 @@ Auth::routes(['register' => false, 'verify' => true]);
 Route::group(['middleware' => ["theme:admin,layout"]], function () {
 
     //Dashboard
-    Route::get('/', 'AdminController@index')->name('dashboard');
+    Route::get('/', 'DashboardController@index')->name('dashboard');
 
     //Users Pages
     Route::get('users/query', 'UserController@query')->name('users.query');

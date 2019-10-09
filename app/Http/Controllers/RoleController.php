@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use DB;
 use Exception;
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Log;
@@ -76,7 +75,7 @@ class RoleController extends Controller
      */
     public function store(Request $request)
     {
-        /** @var Model $data */
+        /** @var Role $data */
         DB::beginTransaction();
         try {
             $data = Role::create($request->only(['name']));
@@ -116,7 +115,7 @@ class RoleController extends Controller
      */
     public function update(Request $request, $id)
     {
-        /** @var Model $data */
+        /** @var Role $data */
         DB::beginTransaction();
         try {
             $data = Role::findOrFail($id);

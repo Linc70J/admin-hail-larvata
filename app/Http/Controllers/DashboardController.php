@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Response;
 use Theme;
 
-class SettingController extends Controller
+class DashboardController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,6 +14,6 @@ class SettingController extends Controller
      */
     public function index()
     {
-        return Theme::of('settings.index')->render();
+        return Theme::of('dashboard')->render();
     }
 }
